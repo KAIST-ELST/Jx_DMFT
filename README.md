@@ -6,7 +6,7 @@ This package provides the following utilities :
 * Jx calculation combined with dynamical mean-field theory (DMFT).
 * Self-consistent DMFT calculation.
 
-Jx_DMFT performs the above calculations by reading a non-interacting Hamiltonian through the DFTforge interface. Therefore, the list of DFT-code combinable with Jx_DMFT follows the compatibility of DFTforge (https://github.com/KAIST-ELST/DFTforge.jl).
+Jx_DMFT performs the above calculations by reading a non-interacting Hamiltonian through the DFTforge interface (https://github.com/KAIST-ELST/DFTforge.jl). Therefore, the list of DFT-code combinable with Jx_DMFT follows the compatibility of DFTforge.
 
 # Prerequisite
 * DFTforge pakage of Julia language
