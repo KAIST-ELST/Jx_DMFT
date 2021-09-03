@@ -43,5 +43,14 @@ Jx_DMFT performs the above calculations by reading a non-interacting Hamiltonian
     
     ### CTQMC(ComCTQMC) of COMSUITE package installation
     Below is a very brief introduction to the installation of the COMSUITE package. Therefore, it may not work in your computer environment. For a more successful installation, please visit the COMSUITE package site directly (https://github.com/comscope/comsuite).
+    
+    
+    
+    
     ### CTQMC of EDMFTF package installation
-    Below is a very brief introduction to the installation of EDMFTF package. Therefore, it may not work in your computer environment. For a more successful installation, please visit the COMSUITE package site directly (http://hauleweb.rutgers.edu/tutorials/).
+    Below is a very brief introduction to the installation of EDMFTF package. Therefore, it may not work in your computer environment. For a more successful installation, please visit the EDMFTF package site directly (http://hauleweb.rutgers.edu/tutorials/).
+    
+    
+    
+    
+    
