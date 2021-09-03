@@ -1,5 +1,5 @@
 # Jx_DMFT
-Jx_DMFT is the software for calculating magnetic exchange parameters (Jx) from the magnetic force theorem. 
+Jx_DMFT is a software for calculating magnetic exchange parameters (Jx) from the magnetic force theorem. 
 This package provides the following utilities :
 
 * Jx calculation combined with various density functional theory (DFT) code.
@@ -10,7 +10,7 @@ Jx_DMFT performs the above calculations by reading a non-interacting Hamiltonian
 
 # Prerequisite
 * DFTforge pakage of Julia language
-* DMFT solver (now ComCTQMC of COMSUITE package (https://github.com/comscope/comsuite), and ctqmc solver of EDMFTF (http://hauleweb.rutgers.edu/tutorials/) are available.)
+* DMFT solver (now two CTQMC solver are compatible : CTQMC of COMSUITE package (https://github.com/comscope/comsuite), and CTQMC of EDMFTF (http://hauleweb.rutgers.edu/tutorials/) are available.)
 
   ## Installation of prerequisite
     ### DFTforge installation
@@ -41,8 +41,7 @@ Jx_DMFT performs the above calculations by reading a non-interacting Hamiltonian
     julia> import Pkg; Pkg.add("DFTforge")
     ```
     
-    ### ComCTQMC installation
-    
-    
-    ### ctqmc solver of EDMFTF installation
-    
+    ### CTQMC(ComCTQMC) of COMSUITE package installation
+    Below is a very brief introduction to the installation of the COMSUITE package. Therefore, it may not work in your computer environment. For a more successful installation, please visit the COMSUITE package site directly (https://github.com/comscope/comsuite).
+    ### CTQMC of EDMFTF package installation
+    Below is a very brief introduction to the installation of EDMFTF package. Therefore, it may not work in your computer environment. For a more successful installation, please visit the COMSUITE package site directly (http://hauleweb.rutgers.edu/tutorials/).
