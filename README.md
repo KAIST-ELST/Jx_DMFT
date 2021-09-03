@@ -70,7 +70,7 @@ Jx_DMFT performs the above calculations by reading a non-interacting Hamiltonian
 
     Finally, add the following lines to ``$ vi ~/.bashrc``
     ```
-    export WIEN_DMFT_ROOT=EDMFTF-installed folder/EDMFTF/bini
+    export WIEN_DMFT_ROOT=EDMFTF-installed folder/bini
     export PYTHONPATH=$PYTHONPATH:$WIEN_DMFT_ROOT
     export SCRATCH="."
     export PATH=$WIEN_DMFT_ROOT:$PATH
