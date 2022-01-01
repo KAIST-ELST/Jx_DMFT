@@ -5,6 +5,7 @@ This package provides the following utilities :
 * Jx calculation combined with various density functional theory (DFT) code.
 * Jx calculation combined with dynamical mean-field theory (DMFT).
 * Self-consistent DMFT calculation.
+* Post-processing script for calculating measurable quantities (Ex. Magnon dispersion, local and momentum-dependent spectral function)
 
 Jx_DMFT performs the above calculations by reading a non-interacting Hamiltonian through the DFTforge interface (https://github.com/KAIST-ELST/DFTforge.jl). Therefore, the list of DFT-code combinable with Jx_DMFT follows the compatibility of DFTforge.
 
