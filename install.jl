@@ -1,0 +1,10 @@
+import Pkg
+Pkg.add("Plots")
+Pkg.add("FFTW")
+Pkg.add("JSON")
+Pkg.add("Dierckx")
+Pkg.add("ImageFiltering")
+Pkg.add("Distributed")
+Pkg.add("Printf")
+Pkg.add("ColorSchemes")
+Pkg.add("LinearAlgebra")
