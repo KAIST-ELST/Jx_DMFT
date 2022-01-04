@@ -25,6 +25,10 @@ cp(string(cpfdir,"/",fname), string(pwd(),"/",fname),force=true)
 println("cp ", Jx_DMFT_dir,"/",fname,"  ./",fname)
 
 
+fname = "wannier_hr.dat"
+cp(string(cpfdir,"/",fname), string(pwd(),"/",fname),force=true)
+println("cp ", Jx_DMFT_dir,"/",fname,"  ./",fname)
+
 
 fname = "occ.log"
 cp(string(cpfdir,"/",fname), string(pwd(),"/",fname),force=true)
