@@ -4674,57 +4674,7 @@ end
 DFTforge.pwork(set_current_dftdataset,(hamiltonian_info, 1));
 
 
-K_point_groups = arg_input.Optional["bandplot"]
-K_point_groups[1].K_point_list
 
-K_point_list_all = Array{k_point_Tuple}(undef,0);
-
-for (i,v) in enumerate(K_point_groups)
-  map(x -> push!(K_point_list_all,x) ,v.K_point_list)
-end
-
-
-K_point_list_all_mat =  zeros(length(K_point_list_all),3)
-K_point_name_list = Array{Tuple{Int64,String} }(undef,0)
-
-
-################## removed by TJ ################
-#Cnt = 1
-#for (i,v) in enumerate(K_point_groups)
-    
-#    for (i2,K_point) in enumerate(v.K_point_list)
-#        if(1 == i2)
-#            push!(K_point_name_list,(Cnt,v.K_start_point_name))
-#        end
-#        K_point_cat = hamiltonian_info.scf_r.rv * [K_point[1],K_point[2],K_point[3]];
-#        K_point_cat = [K_point[1],K_point[2],K_point[3]]' * hamiltonian_info.scf_r.rv;
-#        K_point_list_all_mat[Cnt,:] = K_point_cat;
-        
-#        if(i2 == length(v.K_point_list) && i == length(K_point_groups) )
-#            push!(K_point_name_list,(Cnt,v.K_end_point_name))
-#        end
-#        Cnt += 1
-#    end
-#end
-################## removed by TJ ################
-
-
-# Convert K_point distances
-K_point_dist_list = zeros(length(K_point_list_all))
-
-for i in 2:length(K_point_list_all)
-    dist = sum( (K_point_list_all_mat[i-1,:] -     K_point_list_all_mat[i,:]).^2)
-    K_point_dist_list[i] = sqrt(dist);
-end
-#
-K_point_dist_list = cumsum(K_point_dist_list);
-
-#K_point_name_list
-
-
-K_point_tick_pos = map(x -> K_point_dist_list[x[1]],K_point_name_list)
-K_point_tick_name = map(x -> x[2],K_point_name_list)
-print(K_point_tick_pos," ",K_point_tick_name)
 
 if  ( arg_input.Optional["DMFT_Jx"].Calculation_mode == "DMFT" )
 
