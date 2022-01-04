@@ -111,8 +111,12 @@ println("cp ", SCF_DMFT_dir,"/",fname,"  ./",fname)
 println("")
 println("-------------------------------------------------------------------------------")
 println("To calculate strength of exchange interaction, change *.toml file 'Calculation_mode = \"Jx-DMFT\" or \"Jx0\" ")
-println("Jx-DMFT : Calculation with local self-energy")
-println("Jx0 : Calculation with local self-energy = 0.0")
+println("")
+println("                    Jx-DMFT : Calculation with local self-energy")
+println("                    Jx0 : Calculation with local self-energy = 0.0")
 println("-------------------------------------------------------------------------------")
+println("")
+println("")
+
 
 
