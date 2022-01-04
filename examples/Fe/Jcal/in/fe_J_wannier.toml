@@ -1,0 +1,67 @@
+HamiltonianType = "Wannier90" # OpenMX, OpenMXWannier, Wannier90
+spintype = "co_spin" #Set Spin type, para, co_spin, nc_spin
+result_file = ["wannier","wannier"]
+atom12 = [[1,1]]
+
+
+[wannier_optional]
+# atom position info dose not exists at OpenMX wannier
+# cell vector information read from wannier.win
+atomnum = 1
+atompos = [[0.0000000000000000,   0.0000000000000000,   0.0000000000000000]
+           ]  # Atom 12 position x,y,z (fractional)
+
+atoms_orbitals_list = [[1,2,3,4,5,6,7,8,9] # Atom 1 orbitals
+                      ]                     # Atom 4 or
+
+
+
+
+
+[DMFT_Jx]
+Calculation_mode = "Jx-DMFT" # DMFT, Jx-DMFT, Jx0, Magnon are possible
+
+DMFT_loop_N = 50
+
+KgridNum = [10,10,10]
+RgridNum = [10,10,10]
+iWgridCut = 300  # It's recommended to set a value larger than 5 times of Solver_green_Cut
+Solver_green_Cut = 10
+
+Temperature = 386  # kelvin
+mpi_prefix = "mpirun -np 56"
+Corr_atom_Ind = [1]
+Corr_orbital_Ind = [ [5,6,7,8,9] ] # orbital order = wannier orbital order
+Corr_atom_equiv = [1] # start from 1, minus sign means AFM, max(Corr_atom_equiv) = # of impurity problems
+
+basis_transform = "false"
+consider_degeneracy = true
+
+
+EDMFTF_MonteCar_step = 5000000
+EDMFTF_warmup_step = 500000
+EDMFTF_GlobalFlip = 500000
+EDMFTF_tsample = 30
+EDMFTF_nom = 100
+compute_EF = true
+
+
+
+DMFT_Spin_type = 2 # 1: paramagnetic, 2 : spin-polarized
+
+smth_step = 0
+Mix_selfE  = 0.5 # The portion of Old selfenergy in the mixing
+init_bias = 0.5
+
+DMFT_solver = "EDMFTF_ctqmc"  # ComCTQMC, EDMFTF_ctqmc are possible
+imp_dc_type = "FLL-DFT"
+imp1_U = 2.71
+imp1_J = 1.0
+imp1_dc = 6.0
+imp1_int_parameterisation = "slater-condon"
+imp1_int_type = "ising"
+imp1_block = [[1, 0, 0, 0, 0],
+              [0, 2, 0, 0, 0],
+              [0, 0, 3, 0, 0],
+              [0, 0, 0, 4, 0],
+              [0, 0, 0, 0, 5]]   # start from 1

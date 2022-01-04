@@ -1,0 +1,21 @@
+OffDiagonal  real
+aom  1
+Sig  Sig.out
+Delta  Delta.inp
+cix  actqmc.cix
+Ncout  1000000
+nom   100
+svd_lmax  25
+exe  ctqmc
+tsample    30
+warmup      500000.00
+Ed  [ -13.372561072, -13.698955072, -13.372561072, -13.698955072]
+U  2.710000
+J  1.000000
+M      5000000.00
+CoulombF  'Ising'
+mu    13.372561072
+beta    30.063518450
+mode  SM
+GlobalFlip  500000
+nf0  6.000000

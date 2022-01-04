@@ -1,0 +1,17 @@
+log(Zatom)=2616.02
+Acceptance ratio: add/rm=0.297147  mv=0.265962 number of accepted steps=1434462 sign at finish 1
+acceptance add/rm for orbital [0]=0.0803876 acceptance  move  for orbital [0]=0.00947045 
+acceptance add/rm for orbital [1]=0.0805835 acceptance  move  for orbital [1]=0.00968516 
+acceptance add/rm for orbital [2]=0.0654064 acceptance  move  for orbital [2]=0.00580636 
+acceptance add/rm for orbital [3]=0.080847 acceptance  move  for orbital [3]=0.00968377 
+acceptance add/rm for orbital [4]=0.0659286 acceptance  move  for orbital [4]=0.00589141 
+acceptance add/rm for orbital [5]=0.122538 acceptance  move  for orbital [5]=0.0124395 
+acceptance add/rm for orbital [6]=0.121947 acceptance  move  for orbital [6]=0.0123998 
+acceptance add/rm for orbital [7]=0.096181 acceptance  move  for orbital [7]=0.00741463 
+acceptance add/rm for orbital [8]=0.122348 acceptance  move  for orbital [8]=0.012275 
+acceptance add/rm for orbital [9]=0.0960025 acceptance  move  for orbital [9]=0.0076384 
+t_add=154.81 t_rm=117.98 t_mv=22.53 t_accept=144.55 t_measure=229.82 t_trial1=9.43 t_trial2=73 t_trial3=59.79 t_g=2.16 t_f=2.81 t_nj=131.99 t_fgf=85.15
+Number of successfully sampled Green's functions is 168 112 168 112 
+mom=2.708    1.87074  2.12055  1.68811  
+Epot=69.9662     Ekin=-6.30488   Tr(Sigma*G)=70.1271     Ekins=-5.46967 
+nf=8.3874 chiS0=4.8284 chiD=0.108265 <<Sz>>=0.385039 TrSigmaG=70.1271 <s>=1
