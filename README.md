@@ -113,4 +113,14 @@ Jx_DMFT performs the above calculations by reading a non-interacting Hamiltonian
     ```
     
     
+    ### Other dependencies
+    Jx_DMFT also has dependencies on ``FFTW``, ``JSON``, and  ``Dierckx``.
+    You can install those with the following command:
+    ```
+    julia> import Pkg
+    julia> Pkg.add("FFTW")
+    julia> Pkg.add("JSON")
+    julia> Pkg.add("Dierckx")
+    ```
+
     
