@@ -1,4 +1,5 @@
 * Taekjung Kim, email: tj.kim@kaist.ac.kr
+* Hyeong Jun Lee, email: hyeong.jun.lee@kaist.ac.kr
 
 # Jx_DMFT
 Jx_DMFT is a software for calculating magnetic exchange parameters (Jx) from the magnetic force theorem. 
